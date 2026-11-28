@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>दिपु मेहता | रोह पंचायत • जनसेवा एवं नेतृत्व</title>
+<meta name="description" content="दिपु मेहता — रोह पंचायत के पूर्व मुखिया एवं वर्तमान PACS अध्यक्ष। अनुभव, विश्वास और जनसेवा।">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-dark: #0b3321;
+  --green: #14532d;
+  --green-light: #17613d;
+  --gold: #d6a84f;
+  --gold-light: #f2d48a;
+  --ink: #18251d;
+  --muted: #57655b;
+  --cream: #f7f5ee;
+  --cream-dark: #eeece3;
+  --white: #ffffff;
+  --border: #e2e0d6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Top Navbar */
+.navbar {
+  background: rgba(11, 51, 33, 0.97);
+  backdrop-filter: blur(8px);
+  color: var(--white);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--gold);
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: 0.25s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.nav-btn-primary {
+  background: var(--gold);
+  color: #16251b;
+}
+
+.nav-btn-primary:hover {
+  background: #e6b85c;
+}
+
+.nav-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: var(--white);
+}
+
+.nav-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.beta-tag {
+  background: var(--gold-light);
+  color: #16251b;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-light) 65%, #9e7b3c 100%);
+  color: var(--white);
+  padding: 60px 0 68px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  right: -130px;
+  top: -150px;
+  pointer-events: none;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: rgba(242, 212, 138, 0.15);
+  border: 1px solid rgba(242, 212, 138, 0.4);
+  color: var(--gold-light);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 5px 15px;
+  border-radius: 50px;
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-role {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
+.hero p {
+  max-width: 760px;
+  font-size: clamp(0.98rem, 2vw, 1.1rem);
+  color: #f1f6f2;
+  margin-bottom: 0;
+}
+
+/* Sections */
+.section {
+  padding: 56px 0;
+}
+
+.section-alt {
+  background: var(--cream-dark);
+}
+
+.section-header {
+  margin-bottom: 26px;
+}
+
+.section-header h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+  color: var(--green);
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.section-line {
+  width: 55px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 4px;
+}
+
+/* Parichay Box */
+.parichay-box {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(24, 37, 29, 0.05);
+}
+
+.parichay-box p {
+  font-size: 1.05rem;
+  color: #243329;
+  margin-bottom: 16px;
+}
+
+.parichay-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Experience Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.exp-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--green);
+  box-shadow: 0 10px 25px rgba(24, 37, 29, 0.05);
+  transition: 0.25s;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  border-top-color: var(--gold);
+}
+
+.exp-badge {
+  display: inline-block;
+  background: #f0fdf4;
+  color: var(--green);
+  font-weight: 800;
+  font-size: 1.08rem;
+  padding: 4px 13px;
+  border-radius: 9px;
+  border: 1px solid #bbf7d0;
+  margin-bottom: 12px;
+}
+
+.exp-card h3 {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 9px;
+  font-weight: 800;
+}
+
+.exp-card p {
+  font-size: 0.96rem;
+  color: var(--muted);
+}
+
+/* Leadership Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.feature-item {
+  background: var(--white);
+  padding: 24px 22px;
+  border-radius: 16px;
+  border-left: 4px solid var(--gold);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(24, 37, 29, 0.04);
+}
+
+.feature-item h3 {
+  font-size: 1.12rem;
+  color: var(--green);
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Sankalp / Vision List */
+.sankalp-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.sankalp-card {
+  background: var(--white);
+  padding: 20px 22px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 5px 15px rgba(24, 37, 29, 0.03);
+}
+
+.sankalp-num {
+  background: var(--green);
+  color: var(--gold-light);
+  font-weight: 800;
+  font-size: 0.95rem;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.sankalp-card h4 {
+  font-size: 1.06rem;
+  color: var(--ink);
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.sankalp-card p {
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* Villages Strip */
+.villages-strip {
+  margin-top: 28px;
+  background: var(--white);
+  border: 1px dashed var(--gold);
+  padding: 16px 20px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--green-dark);
+}
+
+/* Bottom Banner (Bina button ke, clean & dignified) */
+.banner {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  color: var(--white);
+  padding: 52px 20px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+  color: var(--gold-light);
+  margin-bottom: 12px;
+}
+
+.banner p {
+  font-size: 1.08rem;
+  color: #e8f1eb;
+  max-width: 720px;
+  margin: 0 auto 14px;
+}
+
+.banner-quote {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 20px;
+  border-top: 1px solid rgba(242, 212, 138, 0.35);
+  border-bottom: 1px solid rgba(242, 212, 138, 0.35);
+  color: var(--gold-light);
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+/* Footer */
+.footer {
+  background: #082418;
+  color: #cbd5e1;
+  padding: 28px 16px;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.footer strong {
+  color: var(--white);
+}
+
+.footer .dev-credit {
+  margin-top: 6px;
+  font-size: 0.86rem;
+  color: var(--gold-light);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 640px) {
+  .wrap {
+    padding: 0 16px;
+  }
+  .nav-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .brand {
+    justify-content: center;
+    font-size: 1.05rem;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+  }
+  .nav-btn {
+    padding: 9px 8px;
+    font-size: 0.78rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .beta-tag {
+    font-size: 0.62rem;
+    padding: 1px 4px;
+  }
+  .hero {
+    padding: 40px 0 48px;
+  }
+  .section {
+    padding: 42px 0;
+  }
+  .parichay-box, .exp-card {
+    padding: 20px 18px;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <nav class="navbar">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>रोह पंचायत • जनसेवा</span>
+      </div>
+      <div class="nav-links">
+        <a href="https://mukhiyapanchayatroh.github.io/login/" class="nav-btn nav-btn-primary" target="_blank" rel="noopener noreferrer">कार्यालय वेबसाइट ↗</a>
+        <a href="https://mukhiyapanchayatroh.github.io/pc/" class="nav-btn nav-btn-outline" target="_blank" rel="noopener noreferrer">कार्यालय वेबसाइट <span class="beta-tag">BETA</span> ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">अनुभव • विश्वास • जनसेवा</div>
+      <h1>दिपु मेहता</h1>
+      <div class="hero-role">रोह पंचायत के पूर्व मुखिया एवं वर्तमान PACS अध्यक्ष</div>
+      <p>ग्रामीण समाज, किसानों और आम जनता के सुख-दुख से वर्षों से जुड़े एक अनुभवी और भरोसेमंद जनप्रतिनिधि। पारदर्शी कार्यशैली, सुलभ संवाद और क्षेत्र के विकास के प्रति समर्पण उनकी पहचान है।</p>
+    </div>
+  </header>
+
+  <!-- Section 1: परिचय -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>परिचय</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="parichay-box">
+        <p><strong>दिपु मेहता</strong> रोह पंचायत के एक अनुभवी, मिलनसार और जमीनी स्तर से जुड़े व्यक्तित्व हैं। वर्षों से पंचायत, ग्रामीण समाज और किसानों के बीच रहकर काम करने के कारण उन्होंने क्षेत्र की हर छोटी-बड़ी समस्या और जमीनी जरूरतों को भली-भांति समझा है।</p>
+        <p>पंचायत के मुखिया के रूप में उनके कार्यकाल और रोह PACS के माध्यम से किसान सेवा के दीर्घकालिक अनुभव ने उनके सार्वजनिक जीवन को एक मजबूत आधार दिया है। उनकी सोच में नेतृत्व का अर्थ केवल पद नहीं, बल्कि बिना किसी भेदभाव के हर वर्ग की बात सुनना, हर परिवार के सुख-दुख में खड़ा रहना और सबका साथ लेकर पंचायत को आगे बढ़ाना है।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: सार्वजनिक जीवन एवं अनुभव -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>सार्वजनिक जीवन एवं अनुभव</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-grid">
+        <div class="exp-card">
+          <div class="exp-badge">2016 – 2021</div>
+          <h3>पूर्व मुखिया, रोह पंचायत</h3>
+          <p>पांच वर्षों के कार्यकाल में पंचायत की बुनियादी सुविधाओं, ग्रामीण विकास और सरकारी योजनाओं का लाभ आमजन तक पहुँचाने में सक्रिय भूमिका निभाई।</p>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-badge">2001 – वर्तमान</div>
+          <h3>रोह PACS से जुड़ाव</h3>
+          <p>प्राथमिक कृषि साख समिति (PACS) के माध्यम से किसानों की समस्याओं—खाद, बीज, धान अधिप्राप्ति और कृषि सहायता—को करीब से समझने और हल करने का लंबा अनुभव।</p>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-badge">सुलभ जनसंपर्क</div>
+          <h3>जनता के बीच, जनता के साथ</h3>
+          <p>रोह, मनियोचक, खरिजामा, मुसेपुर और हरवंशबिगहा समेत पूरी पंचायत के हर परिवार से सीधा जुड़ाव और सम्मानपूर्वक संवाद।</p>
+        </div>
+      </div>
+
+      <div class="villages-strip">
+        <strong>सेवा क्षेत्र (रोह पंचायत):</strong> रोह • मनियोचक • खरिजामा • मुसेपुर • हरवंशबिगहा
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: नेतृत्व की प्रमुख विशेषताएं -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>नेतृत्व की प्रमुख विशेषताएं</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>सरल और मिलनसार स्वभाव</h3>
+          <p>हर नागरिक से सहजता से मिलना, अपनत्व का भाव रखना और सामाजिक एकता को मजबूत करना।</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>प्रशासनिक एवं जमीनी पकड़</h3>
+          <p>मुखिया और PACS के जिम्मेदार पदों पर रहते हुए सरकारी व ग्रामीण कार्यप्रणाली का गहरा अनुभव।</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>जनसुनवाई और समाधान</h3>
+          <p>लोगों की समस्याओं को धैर्यपूर्वक सुनना और उनके व्यावहारिक समाधान के लिए निरंतर प्रयासरत रहना।</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>किसान व युवा हितैषी सोच</h3>
+          <p>किसानों की समृद्धि, युवाओं के मार्गदर्शन और बुजुर्गों के सम्मान को सर्वोच्च प्राथमिकता देना।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: रोह पंचायत के लिए हमारा संकल्प (Naya Section) -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>रोह पंचायत के लिए हमारा संकल्प</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="sankalp-list">
+        <div class="sankalp-card">
+          <div class="sankalp-num">01</div>
+          <div>
+            <h4>हर घर तक सरकारी योजनाओं की पहुँच</h4>
+            <p>आवास, पेंशन, राशन और जनकल्याणकारी योजनाओं का लाभ बिना किसी बिचौलिए के सीधे पात्र परिवारों तक पहुँचाना।</p>
+          </div>
+        </div>
+
+        <div class="sankalp-card">
+          <div class="sankalp-num">02</div>
+          <div>
+            <h4>किसानों को समय पर खाद, बीज और समर्थन</h4>
+            <p>पंचायत के अन्नदाता किसानों को कृषि संसाधन और धान अधिप्राप्ति में पारदर्शी व त्वरित सहायता उपलब्ध कराना।</p>
+          </div>
+        </div>
+
+        <div class="sankalp-card">
+          <div class="sankalp-num">03</div>
+          <div>
+            <h4>मजबूत बुनियादी ढाँचा और स्वच्छ गाँव</h4>
+            <p>गली-नाली, पेयजल, स्ट्रीट लाइट और ग्रामीण सड़कों के रखरखाव व विकास पर निरंतर ध्यान देना।</p>
+          </div>
+        </div>
+
+        <div class="sankalp-card">
+          <div class="sankalp-num">04</div>
+          <div>
+            <h4>शिक्षा, स्वास्थ्य और डिजिटल सुविधा</h4>
+            <p>युवाओं के भविष्य, बेहतर स्वास्थ्य सेवा और पंचायत स्तर पर डिजिटल जनसुविधाओं को सशक्त बनाना।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Banner (Clean & Button-Free) -->
+  <section class="banner">
+    <div class="wrap">
+      <h2>जनता का विश्वास • हमारा संकल्प</h2>
+      <p>अनुभव, पारदर्शी कार्यशैली, सहज संवाद और रोह पंचायत के हर परिवार की निरंतर जनसेवा। पद से बढ़कर जनसेवा और सम्मान ही हमारी असली पूँजी है।</p>
+      <div class="banner-quote">“काम हमारा, हक़ हमारा — रोह पंचायत का भविष्य हमारा”</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div><strong>दिपु मेहता</strong> — रोह पंचायत परिचय एवं सार्वजनिक जीवन</div>
+    <div class="dev-credit">Website Designed &amp; Developed by <strong>Aadi Cyber Cafe, Roh</strong></div>
+  </footer>
+
+</body>
+</html>
